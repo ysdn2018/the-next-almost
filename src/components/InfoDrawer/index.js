@@ -113,6 +113,16 @@ const ShowNight = styled.div `
   display: flex;
   justify-content: space-between;
   margin-bottom: .2rem;
+
+  .tighten {
+    margin-right: -0.7%;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    .tighten {
+      margin-right: -.5%;
+    }
+  }
 `
 
 const ShowAddress = styled.div `
@@ -162,7 +172,7 @@ export default class BottomNav extends React.Component {
                 </ShowNight>
                 <ShowNight>
                   <h3>Opening Night</h3>
-                  <h3>8PM-11PM</h3>
+                  <h3 className="tighten">8PM-11PM</h3>
                 </ShowNight>
               </ShowDate>
               <ShowDate>
