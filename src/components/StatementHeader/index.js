@@ -10,7 +10,7 @@ import { spacing, breakpoints } from '../../utils/constants.js'
 const StatementContainer = styled.h1`
   position: relative;
   width: 100%;
-  height: 100%;
+  height: calc(100% - ${spacing.bigger-3}px);
   padding: 0 ${spacing.smaller}px;
   color: black;
 

@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import Button from '../components/Button'
-import Img from 'gatsby-image'
+
 import StatementHeader from '../components/StatementHeader'
+import InfoDrawer from '../components/InfoDrawer'
 
 
 // styled components
@@ -14,40 +14,17 @@ const Container = styled.div`
 
 
 // page component
-export default function IndexPage({ data }) {
-  const graduates = data.allMarkdownRemark.edges;
+export default function IndexPage() {
 
   return (
     <Container>
+
       <StatementHeader
        />
 
-
+      <InfoDrawer />
 
     </Container>
   )
 }
 
-// data query
-export const query = graphql`
-  query IndexQuery {
-    
-    allMarkdownRemark (filter: { fileAbsolutePath: {regex: "/content/graduates/"} } ) {
-      edges {
-        node {
-          id
-
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            noun
-            verb
-          }
-        }
-      } 
-    }
-
-  }
-`;
