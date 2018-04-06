@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import DrawerButton from '../DrawerButton'
 import Instagram from '../Instagram'
+import Facebook from '../Facebook'
 import { animations, spacing, breakpoints } from '../../utils/constants.js'
 
 
@@ -27,7 +28,7 @@ const Container = styled.div`
     @media (min-width: 550px) {
       transform: translateY(${props => props.open ? "0" : "calc(100% - 4.5rem)"});
     }
-    @media (min-width: ${breakpoints.mobile}) {
+    @media (min-width: ${breakpoints.tablet}) {
       transform: translateY(${props => props.open ? "0" : "calc(380px - 4.5rem)"});
     }
   }
@@ -97,8 +98,8 @@ const ShowDate = styled.div `
   margin-bottom: ${spacing.big}px;
 
   @media (max-width: ${breakpoints.tablet}) {
-    margin-top: ${spacing.smaller}px;
-    margin-bottom: ${spacing.smaller}px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
 `
@@ -136,7 +137,6 @@ export default class BottomNav extends React.Component {
 
         <InnerNav>
 
-<<<<<<< HEAD
           <ShowInfo>
 
             <ShowTitle>
@@ -150,21 +150,21 @@ export default class BottomNav extends React.Component {
 
             <ShowTimes>
               <ShowDate>
-                <h3>April 11</h3>
+                <h4>April 11</h4>
                 <ShowNight>
-                  <h2>Industry Night</h2>
-                  <h2>5-8PM</h2>
+                  <h3>Industry Night</h3>
+                  <h3>5-8PM</h3>
                 </ShowNight>
                 <ShowNight>
-                  <h2>Opening Party</h2>
-                  <h2>8-11PM</h2>
+                  <h3>Opening Party</h3>
+                  <h3>8-11PM</h3>
                 </ShowNight>
               </ShowDate>
               <ShowDate>
-                <h3>April 12-13</h3>
+                <h4>April 12-13</h4>
                 <ShowNight>
-                  <h2>Public Viewing</h2>
-                  <h2>10AM-4PM</h2>
+                  <h3>Public Viewing</h3>
+                  <h3>10AM-4PM</h3>
                 </ShowNight>
               </ShowDate>
             </ShowTimes>
@@ -173,17 +173,9 @@ export default class BottomNav extends React.Component {
 
           <SocialLinks>
               <Instagram/>
-              <Instagram/>
+              <Facebook/>
           </SocialLinks>
 
-=======
-          <ShowTitle>
-            <h1>stuff</h1>
-          </ShowTitle>
-
-          <ShowTimes></ShowTimes>
-          <Instagram />
->>>>>>> 02747f15cc665dc3d64fd6287df8220014ec3e97
         </InnerNav>
 
       </Container>

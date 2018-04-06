@@ -124,31 +124,21 @@ injectGlobal`
   }
 
   h3 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
+    font-size: 3.5rem;
     line-height: 1;
     margin-bottom: 0.5rem;
   }
 
   h4 {
     text-transform: uppercase;
-    font-size: 2rem;
-  }
-
-  h5 {
-    text-transform: uppercase;
-    font-size: 1.5 rem;
-  }
-
-  strong {
-    font-weight: 400;
+    font-size: 2.5rem;
   }
 
   p {
     /* font-size: calc(0.5vw + 1.2rem); */
     font-size: 2.5rem;
     line-height: 0.1;
-    margin-bottom: ${ spacing.small}px;
+    margin-bottom: 1rem;
   }
 
   a {
@@ -167,17 +157,19 @@ injectGlobal`
     }
 
     h2 {
-      font-size: 2.8rem;
+      font-size: 3rem;
     }
 
     h3 {
-      font-size: 1.8rem;
+      font-size: 2.5rem;
       line-height: 1.1;
+      margin-bottom: .2rem;
     }
 
     h4 {
       font-size: 1.8rem;
       line-height: 1.2;
+      margin-bottom: .1rem;
     }
 
     p {
