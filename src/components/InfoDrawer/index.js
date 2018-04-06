@@ -102,6 +102,11 @@ const ShowDate = styled.div `
     margin-bottom: 1rem;
   }
 
+  @media (max-width: ${breakpoints.saba}) {
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+  }
+
 `
 
 const ShowNight = styled.div `

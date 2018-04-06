@@ -19,6 +19,7 @@ const spacing = {
 };
 
 const breakpoints = {
+  saba: '320px',
   mobile: '500px',
   tablet: '800px',
   smallScreen: '1000px'

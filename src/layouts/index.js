@@ -199,6 +199,27 @@ injectGlobal`
 
   }
 
+  @media screen and (max-width: ${breakpoints.saba} ) {
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+    }
+
+    h4 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+
+  }
+
+
 
   @font-face {
     font-family: 'Haas Grot Text';
