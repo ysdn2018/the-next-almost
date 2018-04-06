@@ -5,11 +5,16 @@ module.exports = {
   siteMetadata: {
     title: `the next base`,
   },
-  // pathPrefix: `/the-next-website`,
   plugins: [
     `gatsby-plugin-react-next`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-60215266-12",
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
