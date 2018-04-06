@@ -177,11 +177,11 @@ injectGlobal`
     }
 
     h2 {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
 
     h3 {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       line-height: 1.1;
       margin-bottom: .2rem;
     }

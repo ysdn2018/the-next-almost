@@ -18,8 +18,6 @@ const StatementContainer = styled.h1`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
 
   transition: height 200ms cubic-bezier(.14,.6,.36,1);
 

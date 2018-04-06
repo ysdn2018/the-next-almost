@@ -35,7 +35,7 @@ const Container = styled.div`
 
   @media (max-width: ${breakpoints.tablet}) {
     transform: translateY(${props => props.open ? "0" : "calc(100% - 3.86rem)"});
-    height: 80%;
+    height: calc(100% - ${spacing.bigger}px);
   }
 `
 
