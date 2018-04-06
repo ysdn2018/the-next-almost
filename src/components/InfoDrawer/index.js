@@ -35,7 +35,7 @@ const Container = styled.div`
 
   @media (max-width: ${breakpoints.tablet}) {
     transform: translateY(${props => props.open ? "0" : "calc(100% - 3.86rem)"});
-    height: 70%;
+    height: 80%;
   }
 `
 
@@ -153,11 +153,11 @@ export default class BottomNav extends React.Component {
                 <h4>April 11</h4>
                 <ShowNight>
                   <h3>Industry Night</h3>
-                  <h3>5-8PM</h3>
+                  <h3>5PM-8PM</h3>
                 </ShowNight>
                 <ShowNight>
-                  <h3>Opening Party</h3>
-                  <h3>8-11PM</h3>
+                  <h3>Opening Night</h3>
+                  <h3>8PM-11PM</h3>
                 </ShowNight>
               </ShowDate>
               <ShowDate>

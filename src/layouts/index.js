@@ -150,6 +150,26 @@ injectGlobal`
     }
   }
 
+  @media screen and (max-width: ${breakpoints.smallScreen} ) {
+
+    h2 {
+      font-size: 3.5rem;
+    }
+
+    h3 {
+      font-size: 3rem;
+    }
+
+    h4 {
+      font-size: 2.2rem;
+    }
+
+    p {
+      font-size: 2.2rem;
+    }
+
+  }
+
   @media screen and (max-width: ${breakpoints.tablet} ) {
 
     h1 {

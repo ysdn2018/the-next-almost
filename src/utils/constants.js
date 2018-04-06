@@ -20,7 +20,8 @@ const spacing = {
 
 const breakpoints = {
   mobile: '500px',
-  tablet: '800px'
+  tablet: '800px',
+  smallScreen: '1000px'
 }
 
 const animations = {
