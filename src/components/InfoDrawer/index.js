@@ -9,6 +9,7 @@ const BottomNavButton = DrawerButton.extend`
   border-top: 1px solid black;
   top: -1px;
   border-bottom: 1px solid black;
+  background-color: #FFE000;
 `
 
 const Container = styled.div`
@@ -17,7 +18,7 @@ const Container = styled.div`
   bottom: 0;
   width: 100%;
   height: 380px;
-  background-color: white;
+  background-color: #FFE000;
   padding-top: calc(4rem - 1px);
   transition: transform 200ms cubic-bezier(.14,.6,.36,1);
   transform: translateY(${props => props.open ? "0" : "calc(380px - 3.86rem)"});
@@ -42,6 +43,14 @@ const InnerNav = styled.div`
   height: 100%;
 `
 
+const ShowTitle = styled.div `
+
+`
+
+const ShowTimes = styled.div `
+  
+`
+
 // component
 export default class BottomNav extends React.Component {
   render() {
@@ -53,9 +62,13 @@ export default class BottomNav extends React.Component {
         </BottomNavButton>
 
         <InnerNav>
-          <h1>stuff</h1>
-          <Instagram /> 
-          
+
+          <ShowTitle>
+            <h1>stuff</h1>
+          </ShowTitle>
+
+          <ShowTimes></ShowTimes>
+          <Instagram />
         </InnerNav>
 
       </Container>
