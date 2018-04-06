@@ -21,6 +21,9 @@ const StatementContainer = styled.h1`
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 
+  transition: height 200ms cubic-bezier(.14,.6,.36,1);
+
+
   @media (max-width: ${breakpoints.mobile}) {
     padding: 0 ${ spacing.smaller}px;
   }

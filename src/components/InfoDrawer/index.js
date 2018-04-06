@@ -12,7 +12,6 @@ const BottomNavButton = DrawerButton.extend`
   background-color: #FFE000;
 `
 
-// styled components
 const Container = styled.div`
   z-index: 5;
   position: fixed;
@@ -37,10 +36,6 @@ const Container = styled.div`
     transform: translateY(${props => props.open ? "0" : "calc(100% - 3.86rem)"});
     height: 70%;
   }
-`
-
-const Text = styled.p`
-
 `
 
 const InnerNav = styled.div`
@@ -131,26 +126,17 @@ const SocialLinks = styled.div `
 
 // component
 export default class BottomNav extends React.Component {
-  state = {
-    open: false
-  }
-
-  handleClick = () => {
-    this.setState(prevState => ({
-      open: !prevState.open
-    }))
-  }
-
   render() {
     return (
-      <Container open={this.state.open}>
+      <Container open={this.props.open}>
 
-        <BottomNavButton onClick={this.handleClick}>
-          {this.state.open ? "Close" : "Info"}
+        <BottomNavButton onClick={this.props.handleClick}>
+          {this.props.open ? "Close" : "Info"}
         </BottomNavButton>
 
         <InnerNav>
 
+<<<<<<< HEAD
           <ShowInfo>
 
             <ShowTitle>
@@ -190,6 +176,14 @@ export default class BottomNav extends React.Component {
               <Instagram/>
           </SocialLinks>
 
+=======
+          <ShowTitle>
+            <h1>stuff</h1>
+          </ShowTitle>
+
+          <ShowTimes></ShowTimes>
+          <Instagram />
+>>>>>>> 02747f15cc665dc3d64fd6287df8220014ec3e97
         </InnerNav>
 
       </Container>
