@@ -11,7 +11,6 @@ const BottomNavButton = DrawerButton.extend`
   border-bottom: 1px solid black;
 `
 
-
 // styled components
 const Container = styled.div`
   z-index: 5;
@@ -50,42 +49,28 @@ const InnerNav = styled.div`
 
 // component
 export default class BottomNav extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      verb: 'Introducing',
-      noun: 'Class'
-    }
+  state = {
+    open: false
   }
 
-  handleStatement = (verb, noun) => {
-    if (this.props.windowWidth > 500) {
-      this.setState({
-        verb,
-        noun
-      })
-    }
-  }
-
-  resetStatement = () => {
-    this.setState({
-      verb: 'Introducing',
-      noun: 'Graduates'
-    })
+  handleClick = () => {
+    this.setState(prevState => ({
+      open: !prevState.open
+    }))
   }
 
   render() {
     return (
-      <Container open={this.props.open}>
-        <BottomNavButton onClick={this.props.handleClick} onMouseEnter={() => this.handleStatement("Close", "Info")} onMouseLeave={() => this.resetStatement()}>
-          {this.props.open ? "Close" : "Info"}
+      <Container open={this.state.open}>
+
+        <BottomNavButton onClick={this.handleClick}>
+          {this.state.open ? "Close" : "Info"}
         </BottomNavButton>
 
         <InnerNav>
-
           <h1>stuff</h1>
-
+          <Instagram />
+          
         </InnerNav>
 
       </Container>
