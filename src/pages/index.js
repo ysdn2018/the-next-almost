@@ -10,21 +10,37 @@ import InfoDrawer from '../components/InfoDrawer'
 const Container = styled.div`
   height: 100%;
   width: 100%;
+  overflow: hidden;
 `
 
 
 // page component
-export default function IndexPage() {
+export default class IndexPage extends React.Component {
+  state = {
+    infoOpen: false
+  }
 
-  return (
-    <Container>
+  handleInfoClick = () => {
+    this.setState(prevState => ({
+      infoOpen: !prevState.infoOpen
+    }))
+  }
 
-      <StatementHeader
-       />
+  render() {
+    return (
+      <Container>
 
-      <InfoDrawer />
+        <StatementHeader
+          infoOpen={this.state.infoOpen}
+        />
 
-    </Container>
-  )
+        <InfoDrawer 
+          handleClick={this.handleInfoClick}
+          open={this.state.infoOpen}
+        />
+
+      </Container>
+    )
+  }
 }
 
