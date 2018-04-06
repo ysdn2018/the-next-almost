@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import DrawerButton from '../DrawerButton'
 import Instagram from '../Instagram'
+import Facebook from '../Facebook'
 import { animations, spacing, breakpoints } from '../../utils/constants.js'
 
 
@@ -27,28 +28,116 @@ const Container = styled.div`
     @media (min-width: 550px) {
       transform: translateY(${props => props.open ? "0" : "calc(100% - 4.5rem)"});
     }
-    @media (min-width: ${breakpoints.mobile}) {
+    @media (min-width: ${breakpoints.tablet}) {
       transform: translateY(${props => props.open ? "0" : "calc(380px - 4.5rem)"});
     }
   }
 
-  @media (max-width: ${breakpoints.mobile}) {
+  @media (max-width: ${breakpoints.tablet}) {
     transform: translateY(${props => props.open ? "0" : "calc(100% - 3.86rem)"});
-    height: 90%;
+    height: calc(100% - ${spacing.bigger}px);
   }
 `
 
 const InnerNav = styled.div`
   position: relative;
+  display: flex;
   height: 100%;
+  width: 100%;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+`
+
+const ShowInfo = styled.div `
+  width: 95%;
+  display: flex;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
 `
 
 const ShowTitle = styled.div `
+  width: 100%;
+  padding: ${spacing.small}px;
+  border-right: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    border-right: 0px;
+    border-bottom: 1px solid;
+  }
 
 `
 
 const ShowTimes = styled.div `
-  
+  padding: ${spacing.small}px;
+  border-right: 1px solid;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    width: 100%;
+    border-right: 0px;
+    border-bottom: 1px solid;
+    align-content: center;
+  }
+
+`
+
+const ShowDate = styled.div `
+  margin-bottom: ${spacing.big}px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: ${breakpoints.saba}) {
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+  }
+
+`
+
+const ShowNight = styled.div `
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .2rem;
+
+  .tighten {
+    margin-right: -0.7%;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    .tighten {
+      margin-right: -.5%;
+    }
+  }
+`
+
+const ShowAddress = styled.div `
+`
+
+const SocialLinks = styled.div `
+  display: flex;
+  flex-direction: column;
+  width: 5%;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    width: 100%;
+    flex-direction: row;
+  }
+
 `
 
 // component
@@ -63,12 +152,45 @@ export default class BottomNav extends React.Component {
 
         <InnerNav>
 
-          <ShowTitle>
-            <h1>stuff</h1>
-          </ShowTitle>
+          <ShowInfo>
 
-          <ShowTimes></ShowTimes>
-          <Instagram />
+            <ShowTitle>
+              <h2>The Next Design Gradshow <br></br>By York University/Sheridan College</h2>
+              <ShowAddress>
+                <p>The Gladstone Hotel</p>
+                <p>1214 Queen St. West</p>
+                <p>Toronto, Ontario</p>
+              </ShowAddress>
+            </ShowTitle>
+
+            <ShowTimes>
+              <ShowDate>
+                <h4>April 11</h4>
+                <ShowNight>
+                  <h3>Industry Night</h3>
+                  <h3>5PM-8PM</h3>
+                </ShowNight>
+                <ShowNight>
+                  <h3>Opening Night</h3>
+                  <h3 className="tighten">8PM-11PM</h3>
+                </ShowNight>
+              </ShowDate>
+              <ShowDate>
+                <h4>April 12-13</h4>
+                <ShowNight>
+                  <h3>Public Viewing</h3>
+                  <h3>10AM-4PM</h3>
+                </ShowNight>
+              </ShowDate>
+            </ShowTimes>
+
+          </ShowInfo>
+
+          <SocialLinks>
+              <Instagram/>
+              <Facebook/>
+          </SocialLinks>
+
         </InnerNav>
 
       </Container>

@@ -11,20 +11,19 @@ const StatementContainer = styled.h1`
   position: relative;
   width: 100%;
   height: calc(100% - ${spacing.bigger-3}px);
+  /* height: calc(100% - 42%); */
   padding: 0 ${spacing.smaller}px;
   color: black;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
 
   transition: height 200ms cubic-bezier(.14,.6,.36,1);
 
 
   @media (max-width: ${breakpoints.mobile}) {
-    padding: 0 ${ spacing.smaller}px;
+    padding: ${ spacing.smaller}px;
   }
 `
 

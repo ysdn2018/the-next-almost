@@ -132,32 +132,26 @@ injectGlobal`
   }
 
   h2 {
-    text-transform: uppercase;
     font-size: 4rem;
+    line-height: 1.1;
   }
 
   h3 {
-    font-size: 3rem;
-    text-transform: uppercase;
+    font-size: 3.5rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
   }
 
   h4 {
     text-transform: uppercase;
-    font-size: 2rem;
-  }
-
-  h5 {
-    text-transform: uppercase;
-    font-size: 1.5 rem;
-  }
-
-  strong {
-    font-weight: 400;
+    font-size: 2.5rem;
   }
 
   p {
-    font-size: calc(0.5vw + 1.2rem);
-    line-height: 1.5;
+    /* font-size: calc(0.5vw + 1.2rem); */
+    font-size: 2.5rem;
+    line-height: 0.1;
+    margin-bottom: 1rem;
   }
 
   a {
@@ -169,32 +163,75 @@ injectGlobal`
     }
   }
 
-  @media screen and (max-width: ${breakpoints.mobile} ) {
+  @media screen and (max-width: ${breakpoints.smallScreen} ) {
+
+    h2 {
+      font-size: 3.5rem;
+    }
+
+    h3 {
+      font-size: 3rem;
+    }
+
+    h4 {
+      font-size: 2.2rem;
+    }
+
+    p {
+      font-size: 2.2rem;
+    }
+
+  }
+
+  @media screen and (max-width: ${breakpoints.tablet} ) {
 
     h1 {
       font-size: 4.5rem;
     }
 
     h2 {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
 
     h3 {
-      font-size: 3rem;
+      font-size: 2.2rem;
       line-height: 1.1;
+      margin-bottom: .2rem;
     }
 
     h4 {
       font-size: 1.8rem;
       line-height: 1.2;
+      margin-bottom: .1rem;
     }
 
     p {
-      font-size: calc(0.5vw + 1.3rem);
-      line-height: 1.5;
+      font-size: 1.8rem;
+      line-height: .1;
     }
 
   }
+
+  @media screen and (max-width: ${breakpoints.saba} ) {
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+    }
+
+    h4 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+
+  }
+
 
 
   @font-face {

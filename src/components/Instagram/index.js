@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
-import { breakpoints } from '../../utils/constants.js'
+import { breakpoints, spacing } from '../../utils/constants.js'
 
 // styled components
 const Container = styled.a`
@@ -13,11 +13,11 @@ const Container = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-left: 1px solid white;
   background-color: #FFE000;
   padding-bottom: 2px;
   text-decoration: none;
   height: 100%;
+  border-bottom: 1px solid;
 
   #instagram {
     stroke: black;
@@ -25,7 +25,6 @@ const Container = styled.a`
 
   &:hover {
     border-left: 1px solid black;
-    color: white;
     background-color: black;
 
     #instagram {
@@ -33,8 +32,11 @@ const Container = styled.a`
     }
   }
 
-  @media (max-width: ${breakpoints.mobile}) {
-    padding: 0 1rem;
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: ${spacing.small}px 0px;
+    border-right: 1px solid black;
+    border-bottom: none;
+    height: 100%;
   }
 
 
