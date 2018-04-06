@@ -23,7 +23,7 @@ const StatementContainer = styled.h1`
 
 
   @media (max-width: ${breakpoints.mobile}) {
-    padding: 0 ${ spacing.smaller}px;
+    padding: ${ spacing.smaller}px;
   }
 `
 
