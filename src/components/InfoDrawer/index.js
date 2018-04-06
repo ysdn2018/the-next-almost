@@ -155,7 +155,7 @@ export default class BottomNav extends React.Component {
           <ShowInfo>
 
             <ShowTitle>
-              <h2>The Next Design Gradshow <br></br>By York University/Sheridan College</h2>
+              <h2>The Next Design Grad Show <br></br>By York University/Sheridan College</h2>
               <ShowAddress>
                 <p>The Gladstone Hotel</p>
                 <p>1214 Queen St. West</p>
