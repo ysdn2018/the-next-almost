@@ -172,14 +172,14 @@ export default class BottomNav extends React.Component {
                 </ShowNight>
                 <ShowNight>
                   <h3>Opening Night</h3>
-                  <h3 className="tighten">8PM-11PM</h3>
+                  <h3 className="tighten">8PM-10PM</h3>
                 </ShowNight>
               </ShowDate>
               <ShowDate>
                 <h4>April 12-13</h4>
                 <ShowNight>
                   <h3>Public Viewing</h3>
-                  <h3>10AM-4PM</h3>
+                  <h3>11AM-4PM</h3>
                 </ShowNight>
               </ShowDate>
             </ShowTimes>
