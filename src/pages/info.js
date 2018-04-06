@@ -13,7 +13,7 @@ const Section = styled.div`
   padding: 20px;
   position: relative;
   flex: 1;
-
+ 
   @media (max-width: ${breakpoints.mobile}) {
     width: 100%;
   }
