@@ -66,7 +66,7 @@ export default function Statement(props) {
     <OuterContainer {...props}>
       <StatementContainer>
         <StatementText>
-          {props.verb || "Announcing"}
+          {props.verb || "Launching"}
         </StatementText>
 
         <TheNext right>
@@ -74,7 +74,7 @@ export default function Statement(props) {
         </TheNext>
 
         <StatementText>
-          {props.noun || "Gradshow"}
+          {props.noun || "Website"}
         </StatementText>
       </StatementContainer>
     </OuterContainer>

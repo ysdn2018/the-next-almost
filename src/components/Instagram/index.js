@@ -14,12 +14,10 @@ const Container = styled.a`
   justify-content: center;
   align-items: center;
   border-left: 1px solid white;
-  background-color: white;
+  background-color: #FFE000;
   padding-bottom: 2px;
   text-decoration: none;
   height: 100%;
-
-
 
   #instagram {
     stroke: black;
