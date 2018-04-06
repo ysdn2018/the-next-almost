@@ -119,13 +119,15 @@ injectGlobal`
   }
 
   h2 {
-    text-transform: uppercase;
     font-size: 4rem;
+    line-height: 1.1;
   }
 
   h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 0.5rem;
   }
 
   h4 {
@@ -143,8 +145,10 @@ injectGlobal`
   }
 
   p {
-    font-size: calc(0.5vw + 1.2rem);
-    line-height: 1.5;
+    /* font-size: calc(0.5vw + 1.2rem); */
+    font-size: 2.5rem;
+    line-height: 0.1;
+    margin-bottom: ${ spacing.small}px;
   }
 
   a {
@@ -156,18 +160,18 @@ injectGlobal`
     }
   }
 
-  @media screen and (max-width: ${breakpoints.mobile} ) {
+  @media screen and (max-width: ${breakpoints.tablet} ) {
 
     h1 {
       font-size: 4.5rem;
     }
 
     h2 {
-      font-size: 3rem;
+      font-size: 2.8rem;
     }
 
     h3 {
-      font-size: 3rem;
+      font-size: 1.8rem;
       line-height: 1.1;
     }
 
@@ -177,8 +181,8 @@ injectGlobal`
     }
 
     p {
-      font-size: calc(0.5vw + 1.3rem);
-      line-height: 1.5;
+      font-size: 1.8rem;
+      line-height: .1;
     }
 
   }

@@ -17,7 +17,6 @@ const Container = styled.a`
   padding-bottom: 2px;
   text-decoration: none;
   height: 100%;
-  border-bottom: 1px solid;
 
   #instagram {
     stroke: black;
@@ -35,7 +34,6 @@ const Container = styled.a`
 
   @media (max-width: ${breakpoints.mobile}) {
     padding: 0 1rem;
-    border-right: 1px solid;
   }
 
 

@@ -18,6 +18,7 @@ const TimerNumber = styled.div`
   letter-spacing: -1px;
 
   p {
+    font-size: 1.6rem;
     margin: 0;
   }
 `
