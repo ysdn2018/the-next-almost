@@ -32,7 +32,7 @@ const NavContainer = styled.div`
 export default function Nav() {
   return (
     <NavContainer>
-        <Timer endDate={moment("2018-04-09 12:00")} />
+        <Timer endDate={moment("2018-04-09 16:00")} />
     </NavContainer>
   )
 }
